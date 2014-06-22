@@ -7,7 +7,8 @@ pkgdesc="adds dm-cache-support to initrd and cleans cache during shutdown"
 arch=('any')
 url="https://github.com/devfaz/arch-dm-cache-rootfs"
 license=('GPL')
-depends=('psmisc')
+depends=('device-mapper' 'coreutils' 'kmod' 'systemd')
+
 source=(https://github.com/devfaz/arch-dm-cache-rootfs)
 md5sums=('ee5ae84d115f051d87fcaaef3b4ae782')
 
