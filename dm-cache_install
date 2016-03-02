@@ -2,7 +2,7 @@
 
 build() {
     local mod
-    for mod in dm-persistent-data dm-mod dm-bio-prison dm-cache dm-cache-mq; do
+    for mod in dm-persistent-data dm-mod dm-bio-prison dm-cache dm-cache-mq dm-cache-smq; do
         add_module "$mod"
     done
 
