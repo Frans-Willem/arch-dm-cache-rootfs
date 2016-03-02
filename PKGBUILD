@@ -16,7 +16,7 @@ install=$pkgname.install
 source=('CHANGELOG.md' 'disable-dm-cache.sh' 'dm-cache.service' 'dm-cache_hook' 'dm-cache_install')
 changelog='CHANGELOG.md'
 
-build() {
+package() {
     install -Dm644 "$srcdir/dm-cache_hook"      "$pkgdir/usr/lib/initcpio/hooks/dm-cache"
     install -Dm644 "$srcdir/dm-cache_install"   "$pkgdir/usr/lib/initcpio/install/dm-cache"
     install -Dm644 "$srcdir/dm-cache.service"    "$pkgdir/usr/lib/systemd/system/dm-cache.service"
